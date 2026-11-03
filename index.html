@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VESTIRE — contemporary fashion for men and women. Discover new arrivals, best sellers and seasonal edits.">
+  <title>VÉRSE — Contemporary Fashion</title>
+
+  <!-- Fonts: Cormorant Garamond (display) + Inter (text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== SVG ICON SPRITE (referenced with <use>) ===== -->
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-twitter" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== ANNOUNCEMENT BAR ===== -->
+  <div class="announce" role="note">
+    <p>Free shipping across India on orders above ₹2,999 &nbsp;•&nbsp; Easy 15-day returns</p>
+  </div>
+
+  <!-- ===== HEADER / NAVIGATION (Flexbox) ===== -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+
+      <button class="icon-btn nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <svg class="icon"><use href="#i-menu"/></svg>
+      </button>
+
+      <a href="#home" class="logo" aria-label="VÉRSE home">VESTI<span>R</span>E</a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#new-arrivals" class="nav__link" data-filter="all">New Arrivals</a></li>
+        <li><a href="#new-arrivals" class="nav__link" data-filter="men">Men</a></li>
+        <li><a href="#new-arrivals" class="nav__link" data-filter="women">Women</a></li>
+        <li><a href="#new-arrivals" class="nav__link" data-filter="accessories">Accessories</a></li>
+        <li><a href="#new-arrivals" class="nav__link nav__link--sale" data-filter="sale">Sale</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="searchToggle" aria-label="Search products" aria-expanded="false" aria-controls="searchBar">
+          <svg class="icon"><use href="#i-search"/></svg>
+        </button>
+        <button class="icon-btn" id="themeToggle" aria-label="Switch to dark theme">
+          <svg class="icon icon--moon"><use href="#i-moon"/></svg>
+          <svg class="icon icon--sun"><use href="#i-sun"/></svg>
+        </button>
+        <button class="icon-btn has-count" id="wishlistToggle" aria-label="Open wishlist">
+          <svg class="icon"><use href="#i-heart"/></svg>
+          <span class="count" id="wishlistCount">0</span>
+        </button>
+        <button class="icon-btn has-count" id="cartToggle" aria-label="Open shopping bag">
+          <svg class="icon"><use href="#i-bag"/></svg>
+          <span class="count" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Search bar (slides down) -->
+    <div class="search-bar" id="searchBar" hidden>
+      <form class="search-bar__form container" role="search" id="searchForm">
+        <label for="searchInput" class="visually-hidden">Search products</label>
+        <svg class="icon"><use href="#i-search"/></svg>
+        <input type="search" id="searchInput" placeholder="Search coats, sneakers, watches…" autocomplete="off">
+        <span class="search-bar__result" id="searchResult" aria-live="polite"></span>
+        <button type="button" class="icon-btn" id="searchClose" aria-label="Close search">
+          <svg class="icon"><use href="#i-close"/></svg>
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO (positioning: image + overlay + content) ===== -->
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <img class="hero__img" src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1920&q=80" alt="Model wearing a tailored autumn look">
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <p class="eyebrow eyebrow--light">Autumn / Winter 2026</p>
+        <h1 id="heroTitle">Dressed for<br><em>every season</em> of you.</h1>
+        <p class="hero__text">Considered tailoring, soft layers and timeless essentials — designed in India, made to be worn on repeat.</p>
+        <div class="hero__cta">
+          <a href="#new-arrivals" class="btn btn--light" data-filter="all">Shop Now
+            <svg class="icon"><use href="#i-arrow"/></svg></a>
+          <a href="#categories" class="btn btn--ghost">Explore Collections</a>
+        </div>
+      </div>
+      <aside class="hero__badge" aria-label="Seasonal announcement">
+        <span>Winter Edit</span>
+        <strong>Up to 40% off</strong>
+      </aside>
+    </section>
+
+    <!-- ===== MARQUEE STRIP ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>New Season</span><span>Free Shipping ₹2,999+</span><span>Winter Edit</span><span>Easy Returns</span>
+        <span>New Season</span><span>Free Shipping ₹2,999+</span><span>Winter Edit</span><span>Easy Returns</span>
+        <span>New Season</span><span>Free Shipping ₹2,999+</span><span>Winter Edit</span><span>Easy Returns</span>
+      </div>
+    </div>
+
+    <!-- ===== FEATURED CATEGORIES (CSS Grid) ===== -->
+    <section class="section container" id="categories" aria-labelledby="catTitle">
+      <header class="section__head">
+        <p class="eyebrow">Browse</p>
+        <h2 id="catTitle">Shop by category</h2>
+      </header>
+
+      <div class="category-grid">
+        <article class="cat-card">
+          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Men's collection" loading="lazy">
+          <div class="cat-card__body">
+            <h3>Men's Collection</h3>
+            <a href="#new-arrivals" class="btn btn--light btn--sm" data-filter="men">Shop Men</a>
+          </div>
+        </article>
+        <article class="cat-card">
+          <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80" alt="Women's collection" loading="lazy">
+          <div class="cat-card__body">
+            <h3>Women's Collection</h3>
+            <a href="#new-arrivals" class="btn btn--light btn--sm" data-filter="women">Shop Women</a>
+          </div>
+        </article>
+        <article class="cat-card">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Footwear collection" loading="lazy">
+          <div class="cat-card__body">
+            <h3>Footwear</h3>
+            <a href="#new-arrivals" class="btn btn--light btn--sm" data-filter="footwear">Shop Footwear</a>
+          </div>
+        </article>
+        <article class="cat-card">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Accessories collection" loading="lazy">
+          <div class="cat-card__body">
+            <h3>Accessories</h3>
+            <a href="#new-arrivals" class="btn btn--light btn--sm" data-filter="accessories">Shop Accessories</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== NEW ARRIVALS / TRENDING (CSS Grid) ===== -->
+    <section class="section container" id="new-arrivals" aria-labelledby="arrivalsTitle">
+      <header class="section__head section__head--row">
+        <div>
+          <p class="eyebrow">Just landed</p>
+          <h2 id="arrivalsTitle">New arrivals &amp; trending</h2>
+        </div>
+
+        <!-- Category filter buttons -->
+        <div class="filters" role="group" aria-label="Filter products by category">
+          <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="men" aria-pressed="false">Men</button>
+          <button class="filter-btn" data-filter="women" aria-pressed="false">Women</button>
+          <button class="filter-btn" data-filter="footwear" aria-pressed="false">Footwear</button>
+          <button class="filter-btn" data-filter="accessories" aria-pressed="false">Accessories</button>
+          <button class="filter-btn" data-filter="sale" aria-pressed="false">Sale</button>
+        </div>
+      </header>
+
+      <p class="empty-state" id="emptyState" hidden>No products match your search. Try a different keyword or filter.</p>
+
+      <div class="product-grid" id="productGrid">
+
+        <!-- 1 -->
+        <article class="product-card" data-id="1" data-name="Oversized Wool Overcoat" data-category="women" data-type="Outerwear" data-price="8999" data-old="11999" data-sale="true">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fit=crop&w=800&q=80" alt="Oversized wool overcoat in camel" loading="lazy">
+            <span class="badge badge--sale">-25%</span>
+            <button class="wish-btn" aria-label="Add Oversized Wool Overcoat to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Women · Outerwear</p>
+            <h3 class="product-name">Oversized Wool Overcoat</h3>
+            <p class="price"><span class="price__now">₹8,999</span><s class="price__old">₹11,999</s></p>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="product-card" data-id="2" data-name="Linen Camp Collar Shirt" data-category="men" data-type="Shirts" data-price="2499">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80" alt="Linen camp collar shirt" loading="lazy">
+            <span class="badge badge--new">New</span>
+            <button class="wish-btn" aria-label="Add Linen Camp Collar Shirt to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Men · Shirts</p>
+            <h3 class="product-name">Linen Camp Collar Shirt</h3>
+            <p class="price"><span class="price__now">₹2,499</span></p>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="product-card" data-id="3" data-name="Pleated Midi Dress" data-category="women" data-type="Dresses" data-price="3499" data-old="4999" data-sale="true">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Pleated midi dress" loading="lazy">
+            <span class="badge badge--sale">-30%</span>
+            <button class="wish-btn" aria-label="Add Pleated Midi Dress to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Women · Dresses</p>
+            <h3 class="product-name">Pleated Midi Dress</h3>
+            <p class="price"><span class="price__now">₹3,499</span><s class="price__old">₹4,999</s></p>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="product-card" data-id="4" data-name="Leather Biker Jacket" data-category="men" data-type="Outerwear" data-price="7999">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80" alt="Black leather biker jacket" loading="lazy">
+            <span class="badge badge--new">New</span>
+            <button class="wish-btn" aria-label="Add Leather Biker Jacket to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Men · Outerwear</p>
+            <h3 class="product-name">Leather Biker Jacket</h3>
+            <p class="price"><span class="price__now">₹7,999</span></p>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="product-card" data-id="5" data-name="White Leather Sneakers" data-category="footwear" data-type="Sneakers" data-price="4299">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" alt="Clean white leather sneakers" loading="lazy">
+            <span class="badge badge--new">New</span>
+            <button class="wish-btn" aria-label="Add White Leather Sneakers to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Footwear · Sneakers</p>
+            <h3 class="product-name">White Leather Sneakers</h3>
+            <p class="price"><span class="price__now">₹4,299</span></p>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="product-card" data-id="6" data-name="Suede Chelsea Boots" data-category="footwear" data-type="Boots" data-price="5999" data-old="7499" data-sale="true">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=80" alt="Suede Chelsea boots" loading="lazy">
+            <span class="badge badge--sale">-20%</span>
+            <button class="wish-btn" aria-label="Add Suede Chelsea Boots to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Footwear · Boots</p>
+            <h3 class="product-name">Suede Chelsea Boots</h3>
+            <p class="price"><span class="price__now">₹5,999</span><s class="price__old">₹7,499</s></p>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="product-card" data-id="7" data-name="Structured Leather Tote" data-category="accessories" data-type="Bags" data-price="3999">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80" alt="Structured leather tote bag" loading="lazy">
+            <span class="badge badge--new">New</span>
+            <button class="wish-btn" aria-label="Add Structured Leather Tote to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Accessories · Bags</p>
+            <h3 class="product-name">Structured Leather Tote</h3>
+            <p class="price"><span class="price__now">₹3,999</span></p>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="product-card" data-id="8" data-name="Classic Aviator Sunglasses" data-category="accessories" data-type="Eyewear" data-price="1999" data-old="2799" data-sale="true">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80" alt="Classic aviator sunglasses" loading="lazy">
+            <span class="badge badge--sale">-29%</span>
+            <button class="wish-btn" aria-label="Add Classic Aviator Sunglasses to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Accessories · Eyewear</p>
+            <h3 class="product-name">Classic Aviator Sunglasses</h3>
+            <p class="price"><span class="price__now">₹1,999</span><s class="price__old">₹2,799</s></p>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="product-card" data-id="9" data-name="Steel Chronograph Watch" data-category="accessories" data-type="Watches" data-price="6499">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Steel chronograph watch" loading="lazy">
+            <span class="badge badge--new">New</span>
+            <button class="wish-btn" aria-label="Add Steel Chronograph Watch to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Accessories · Watches</p>
+            <h3 class="product-name">Steel Chronograph Watch</h3>
+            <p class="price"><span class="price__now">₹6,499</span></p>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="product-card" data-id="10" data-name="Slim Tapered Denim Jeans" data-category="men" data-type="Denim" data-price="2799" data-old="3599" data-sale="true">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80" alt="Slim tapered denim jeans" loading="lazy">
+            <span class="badge badge--sale">-22%</span>
+            <button class="wish-btn" aria-label="Add Slim Tapered Denim Jeans to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Men · Denim</p>
+            <h3 class="product-name">Slim Tapered Denim Jeans</h3>
+            <p class="price"><span class="price__now">₹2,799</span><s class="price__old">₹3,599</s></p>
+          </div>
+        </article>
+
+        <!-- 11 -->
+        <article class="product-card" data-id="11" data-name="Silk Satin Blouse" data-category="women" data-type="Tops" data-price="2999">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=800&q=80" alt="Silk satin blouse" loading="lazy">
+            <span class="badge badge--new">New</span>
+            <button class="wish-btn" aria-label="Add Silk Satin Blouse to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Women · Tops</p>
+            <h3 class="product-name">Silk Satin Blouse</h3>
+            <p class="price"><span class="price__now">₹2,999</span></p>
+          </div>
+        </article>
+
+        <!-- 12 -->
+        <article class="product-card" data-id="12" data-name="Canvas Weekender Backpack" data-category="accessories" data-type="Bags" data-price="3299">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80" alt="Canvas weekender backpack" loading="lazy">
+            <span class="badge badge--new">New</span>
+            <button class="wish-btn" aria-label="Add Canvas Weekender Backpack to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Accessories · Bags</p>
+            <h3 class="product-name">Canvas Weekender Backpack</h3>
+            <p class="price"><span class="price__now">₹3,299</span></p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== PROMOTIONAL BANNER ===== -->
+    <section class="promo" id="sale" aria-labelledby="promoTitle">
+      <img class="promo__img" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1920&q=80" alt="" loading="lazy">
+      <div class="promo__overlay"></div>
+      <div class="promo__content container">
+        <p class="eyebrow eyebrow--light">Limited time</p>
+        <h2 id="promoTitle">The Winter Sale.<br><em>Up to 40% off.</em></h2>
+        <p>Our most-loved coats, boots and knits — reduced until the 30th of November.</p>
+
+        <div class="countdown" id="countdown" role="timer" aria-live="off">
+          <div><strong id="cdDays">00</strong><span>Days</span></div>
+          <div><strong id="cdHours">00</strong><span>Hours</span></div>
+          <div><strong id="cdMins">00</strong><span>Mins</span></div>
+          <div><strong id="cdSecs">00</strong><span>Secs</span></div>
+        </div>
+
+        <a href="#new-arrivals" class="btn btn--light" data-filter="sale">Shop the Sale
+          <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <!-- ===== BEST SELLERS ===== -->
+    <section class="section container" id="best-sellers" aria-labelledby="bestTitle">
+      <header class="section__head">
+        <p class="eyebrow">Most loved</p>
+        <h2 id="bestTitle">Best sellers</h2>
+      </header>
+
+      <div class="product-grid product-grid--four">
+
+        <article class="product-card" data-id="13" data-name="Essential Heavyweight Tee" data-category="men" data-type="T-shirts" data-price="1299">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Essential heavyweight white tee" loading="lazy">
+            <span class="badge badge--rank">#1</span>
+            <button class="wish-btn" aria-label="Add Essential Heavyweight Tee to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Men · T-shirts</p>
+            <h3 class="product-name">Essential Heavyweight Tee</h3>
+            <p class="rating" aria-label="Rated 4.8 out of 5"><svg class="icon"><use href="#i-star"/></svg> 4.8 <span>(2.1k)</span></p>
+            <p class="price"><span class="price__now">₹1,299</span></p>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="14" data-name="Wide-Leg Tailored Trousers" data-category="women" data-type="Trousers" data-price="2699">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80" alt="Wide-leg tailored trousers" loading="lazy">
+            <span class="badge badge--rank">#2</span>
+            <button class="wish-btn" aria-label="Add Wide-Leg Tailored Trousers to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Women · Trousers</p>
+            <h3 class="product-name">Wide-Leg Tailored Trousers</h3>
+            <p class="rating" aria-label="Rated 4.7 out of 5"><svg class="icon"><use href="#i-star"/></svg> 4.7 <span>(1.6k)</span></p>
+            <p class="price"><span class="price__now">₹2,699</span></p>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="15" data-name="Everyday Running Sneakers" data-category="footwear" data-type="Sneakers" data-price="3499" data-old="4199" data-sale="true">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80" alt="Everyday running sneakers" loading="lazy">
+            <span class="badge badge--rank">#3</span>
+            <button class="wish-btn" aria-label="Add Everyday Running Sneakers to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Footwear · Sneakers</p>
+            <h3 class="product-name">Everyday Running Sneakers</h3>
+            <p class="rating" aria-label="Rated 4.6 out of 5"><svg class="icon"><use href="#i-star"/></svg> 4.6 <span>(1.2k)</span></p>
+            <p class="price"><span class="price__now">₹3,499</span><s class="price__old">₹4,199</s></p>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="16" data-name="Full-Grain Leather Belt" data-category="accessories" data-type="Belts" data-price="1499">
+          <figure class="product-media">
+            <img src="https://images.unsplash.com/photo-1553704571-c32d20e3a8d1?auto=format&fit=crop&w=800&q=80" alt="Full-grain leather belt" loading="lazy">
+            <span class="badge badge--rank">#4</span>
+            <button class="wish-btn" aria-label="Add Full-Grain Leather Belt to wishlist" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg></button>
+            <button class="quick-add" data-add>Add to Cart</button>
+          </figure>
+          <div class="product-info">
+            <p class="product-cat">Accessories · Belts</p>
+            <h3 class="product-name">Full-Grain Leather Belt</h3>
+            <p class="rating" aria-label="Rated 4.8 out of 5"><svg class="icon"><use href="#i-star"/></svg> 4.8 <span>(980)</span></p>
+            <p class="price"><span class="price__now">₹1,499</span></p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== BRAND STORY / ABOUT ===== -->
+    <section class="story" id="about" aria-labelledby="storyTitle">
+      <div class="story__grid container">
+        <div class="story__media">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=80" alt="Clothing rails in the VESTIRE studio" loading="lazy">
+          <div class="story__stat">
+            <strong>2019</strong>
+            <span>Founded in Pune</span>
+          </div>
+        </div>
+        <div class="story__text">
+          <p class="eyebrow">Our story</p>
+          <h2 id="storyTitle">Quietly made.<br><em>Loudly loved.</em></h2>
+          <p>VESTIRE began as a small studio with a simple belief — great clothes should be easy to wear, built to last and kind to the people who make them.</p>
+          <p>We work with family-run mills and skilled artisans across India, choosing natural fibres and honest finishes over fast trends.</p>
+          <ul class="story__points">
+            <li><strong>100%</strong><span>Ethically sourced fabrics</span></li>
+            <li><strong>15 days</strong><span>Easy returns</span></li>
+            <li><strong>50k+</strong><span>Happy customers</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section container" id="reviews" aria-labelledby="reviewsTitle">
+      <header class="section__head">
+        <p class="eyebrow">Reviews</p>
+        <h2 id="reviewsTitle">Loved by our customers</h2>
+      </header>
+
+      <div class="review-grid">
+        <blockquote class="review">
+          <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+          <p>The overcoat is unreal — the fabric feels premium and the fit is perfect. Delivered to Bengaluru in just two days.</p>
+          <footer><span class="avatar">AM</span><div><cite>Ananya Mehta</cite><small>Verified buyer</small></div></footer>
+        </blockquote>
+        <blockquote class="review">
+          <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+          <p>Finally a brand that gets minimal style right. The leather jacket and sneakers have become my daily uniform.</p>
+          <footer><span class="avatar">RK</span><div><cite>Rohan Khanna</cite><small>Verified buyer</small></div></footer>
+        </blockquote>
+        <blockquote class="review">
+          <p class="stars" aria-label="4 out of 5 stars">★★★★☆</p>
+          <p>Gorgeous packaging, super soft satin blouse and an easy exchange when I needed a different size.</p>
+          <footer><span class="avatar">SP</span><div><cite>Sneha Patil</cite><small>Verified buyer</small></div></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter" aria-labelledby="newsTitle">
+      <div class="newsletter__inner container">
+        <div>
+          <h2 id="newsTitle">Join the inner circle</h2>
+          <p>Get early access to drops and 10% off your first order.</p>
+        </div>
+        <form class="newsletter__form" id="newsletterForm" novalidate>
+          <label for="newsEmail" class="visually-hidden">Email address</label>
+          <input type="email" id="newsEmail" name="email" placeholder="Enter your email" autocomplete="email" required>
+          <button type="submit" class="btn btn--dark">Subscribe</button>
+          <p class="newsletter__msg" id="newsMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer__grid container">
+      <div class="footer__brand">
+        <a href="#home" class="logo logo--light">VESTI<span>R</span>E</a>
+        <p>Contemporary fashion, designed in India for the world.</p>
+        <ul class="socials" aria-label="Social media">
+          <li><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a></li>
+          <li><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a></li>
+          <li><a href="https://x.com" target="_blank" rel="noopener" aria-label="X / Twitter"><svg class="icon"><use href="#i-twitter"/></svg></a></li>
+          <li><a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a></li>
+        </ul>
+      </div>
+      <nav aria-label="Shop links">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="#new-arrivals" data-filter="all">New Arrivals</a></li>
+          <li><a href="#new-arrivals" data-filter="men">Men</a></li>
+          <li><a href="#new-arrivals" data-filter="women">Women</a></li>
+          <li><a href="#new-arrivals" data-filter="accessories">Accessories</a></li>
+          <li><a href="#new-arrivals" data-filter="sale">Sale</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Help links">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#about">Shipping &amp; Delivery</a></li>
+          <li><a href="#about">Returns &amp; Exchanges</a></li>
+          <li><a href="#about">Size Guide</a></li>
+          <li><a href="#reviews">Customer Reviews</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Company links">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#best-sellers">Best Sellers</a></li>
+          <li><a href="#categories">Collections</a></li>
+          <li><a href="mailto:hello@vestire.example">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; 2026 VESTIRE. A college web development project — not a real store.</p>
+      <p>Prices in Indian Rupees (₹)</p>
+    </div>
+  </footer>
+
+  <!-- ===== SIDE DRAWERS: CART + WISHLIST ===== -->
+  <div class="overlay" id="overlay" hidden></div>
+
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true">
+    <header class="drawer__head">
+      <h2>Your bag</h2>
+      <button class="icon-btn" data-close-drawer aria-label="Close shopping bag"><svg class="icon"><use href="#i-close"/></svg></button>
+    </header>
+    <ul class="drawer__list" id="cartList"></ul>
+    <p class="drawer__empty" id="cartEmpty">Your bag is empty.</p>
+    <footer class="drawer__foot">
+      <p class="drawer__total"><span>Subtotal</span><strong id="cartTotal">₹0</strong></p>
+      <button class="btn btn--dark btn--block" id="checkoutBtn">Checkout</button>
+      <button class="link-btn" id="clearCart">Clear bag</button>
+    </footer>
+  </aside>
+
+  <aside class="drawer" id="wishlistDrawer" aria-label="Wishlist" aria-hidden="true">
+    <header class="drawer__head">
+      <h2>Wishlist</h2>
+      <button class="icon-btn" data-close-drawer aria-label="Close wishlist"><svg class="icon"><use href="#i-close"/></svg></button>
+    </header>
+    <ul class="drawer__list" id="wishList"></ul>
+    <p class="drawer__empty" id="wishEmpty">Tap the heart on any product to save it here.</p>
+  </aside>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
